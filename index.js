@@ -3,6 +3,7 @@ var exec = require("child_process").exec;
 var path = require("path");
 var fs = require("fs");
 var ds = require('./ds');
+var cs = require('./cs');
 var app = express();
 var router  = express.Router();
 app.use('/',router);
@@ -11,5 +12,6 @@ app.use('/',router);
 
 app.listen(process.env.PORT || 3000,()=>{
     console.log('start');
-    ds.set_time_start();    
+    //ds.set_time_start();    
+    ds.git_start(1);
 })
