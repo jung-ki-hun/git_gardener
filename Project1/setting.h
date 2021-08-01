@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string>
 #include <ctime>
-
+#pragma warning(disable:4996)
 #pragma once
 
 using namespace std;
@@ -42,6 +42,7 @@ public:
 	void git_add();
 	void git_commit(string title);
 	void git_log();
+	void git_push(string branch);
 private:
 	git_info g_i;
 };
