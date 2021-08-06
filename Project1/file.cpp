@@ -10,7 +10,7 @@ string time_d() {
 void File_open::file_open_show(){
 	
 	ifstream fin;
-	fin.open(this->d_i.path);
+	fin.open(this->d_i.path); 
 	string s;
 	
 	if (!fin)
@@ -18,7 +18,7 @@ void File_open::file_open_show(){
 		cout << "do not open file";
 	}
 	fin >> s;
-	cout << s << "�Դϴ�." << endl;
+	cout << s << "입니다." << endl;
 	fin.close();
 }
 void File_open::file_open_save() {
